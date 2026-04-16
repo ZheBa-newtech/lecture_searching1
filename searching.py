@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+from generators import unordered_sequence
 
 
 def read_data(file_name, field):
@@ -17,12 +18,7 @@ def read_data(file_name, field):
 
 
 
-# cwd_path = Path.cwd()
-#file_path = cwd_path / file_name
-#def main():
-#pass
-#if __name__ == 'main':
-#main()
+
 def linear_search(sekvenc, cislo):
     positions = []
     for i in range(len(sekvenc)):
@@ -49,5 +45,11 @@ def binary_search(seznam, cislo):
     # #         return i
     # #     else:
     # #         return None
+
+
+# def times():
+
 print(binary_search(seznam=read_data(file_name='sequential.json', field='unordered_numbers'), cislo = 17))
+
+
 # print(linear_search(sekvenc=read_data(file_name='sequential.json', field='unordered_numbers'), cislo=5))
